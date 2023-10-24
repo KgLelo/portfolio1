@@ -4,14 +4,19 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
+
+    /*---------------------------------------*/
+
+
+
 }
 html{
     scroll-behavior: smooth;
 }
 body{
 
-    background: #000;
-    color: blue;
+    background: #93B1A6;
+    color: #113946;
 }
 #header{
 
@@ -34,7 +39,10 @@ nav{
 }
 .logo{
 
-    width: 100px;
+    width: 100%;
+    position: absolute;
+    padding: 5px 5%; 
+    
 }
 
 nav ul li{
@@ -55,7 +63,7 @@ nav ul li a::after{
    content: ''; 
    width: 0;
    height: 3px;
-   background: blue;
+   background: #186F65;
    position: absolute;
    left: 0;
    bottom: -6px;
@@ -78,14 +86,14 @@ nav ul li a:hover::after{
 }
 .header-text h1 span{
 
-    color:aqua;
+    color: #3085C3;
 }
 
 /*-----------ABOUT----------*/
 #about{
 
     padding: 80px 0;
-    color: blue;
+    color:  #113946;
 }
 .row{
 
@@ -111,7 +119,7 @@ nav ul li a:hover::after{
 
     font-size: 60px;
     font-weight: 600;
-    color: azure;
+    color: #F5F5DC;
 }
 .tab-titles{
 
@@ -131,7 +139,7 @@ nav ul li a:hover::after{
    content: '';
    width: 0;
    height: 3px;
-   background: white;
+   background: #F5F5DC;
    position: absolute;
    left: 0;
    bottom: -8px;
@@ -148,7 +156,7 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li span{
 
-  color:white;
+  color: #F5F5DC;
   font-size: 14px;
 }
 .tab-contents{
@@ -183,7 +191,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6),white);
+    background: linear-gradient(rgba(0,0,0,0.6), #F5F5DC);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -204,11 +212,11 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: aquamarine;
+    color: #D0E7D2;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: azure;
+    background: #F5F5DC;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -224,15 +232,15 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid aquamarine;
+    border: 1px solid #B0D9B1;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: grey;
+    color: #B4B4B3;
     transition: background 0.5s;
 }
 .btn:hover{
-    background: azure;
+    background: #F5F5DC;
 }
 
 /*--------------------CONTACT---------------------*/
@@ -246,7 +254,7 @@ nav ul li a:hover::after{
    margin-top: 30px;
 }
 .contact-left p i{
-   color: aqua;
+   color: #D0E7D2;
    margin-right: 15px;
    font-size: 25px;
  }
@@ -257,17 +265,17 @@ nav ul li a:hover::after{
    text-decoration: none;
    font-size: 30px;
    margin-right: 15px;
-   color: aquamarine;
+   color: #D0E7D2;
    display: inline-block;
    transition: transform 0.5s;
  }
  .social-icons a:hover{
-    color: white;
+    color: #F5F5DC;
     transform: translateY(-5px);
  }
  .btn.btn2{
     display: inline-block;
-    background: azure;
+    background: #F5F5DC;
  }
  .contact-right form{
     width: 100%; 
@@ -276,10 +284,10 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline:none;
-    background:gainsboro;
+    background: #F5F5DC;
     padding: 15px;
     margin: 15px 0;
-    color:black;
+    color: #B4B4B3;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -293,12 +301,12 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: gainsboro;
+    background: #F5F5DC;
     font-weight: 300;
     margin-top: 20px;
 }
 .copyright i{
-    color:aqua;
+    color: #D0E7D2;
 }
 
 /*------------------CSS FOR SMALL SCREENS-----------*/
@@ -321,7 +329,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
-        background: aliceblue;
+        background: #D0E7D2;
         position: fixed;
         top: 0;
         right: -200px;
@@ -366,7 +374,7 @@ nav .fa-solid{
 }
 
 #msg{
-    color: aqua;
+    color: #8EACCD;
     margin-top: -40px;
     display: block;
 }
