@@ -50,20 +50,12 @@ nav{
 
     color: #186F65;
 }
-nav ul{
-    
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 nav ul li{
 
+    display: inline-block; 
     list-style: none;
-    margin-left: 30px;
-    margin-top: 10px;
-    font-size: 18px;
+    margin: 10px 5px;
 }
 nav ul li a{
 
@@ -71,7 +63,7 @@ nav ul li a{
     color: #113946;
     font-family: Arial;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     position: relative;
 }
 nav ul li a::after{
@@ -93,7 +85,7 @@ nav ul li a:hover::after{
 .header-text{
 
   margin-top: 20%; 
-  font-size: 45px; 
+  font-size: 35px; 
   
 }
 .header-text h1{
@@ -372,7 +364,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
-        background: #113946;
+        background: #B0D9B1;
         position: fixed;
         top: 0;
         right: -200px;
@@ -380,7 +372,7 @@ nav .fa-solid{
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
-        transition: right 0.5s ease-in-out;
+        transition: right 0.5s;
     }
     nav ul li{
         display: block;
