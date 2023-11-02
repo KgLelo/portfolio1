@@ -15,15 +15,18 @@ html{
 }
 body{
 
-    background: #93B1A6;
+    background: #EEEEEE;
     color: #113946;
 }
 #header{
 
     width: 100%;
-    height: 100vh;
-    background-image: url(images/image\ 1.png);
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(images/image\ 1.png);
+    /*background-image: url(images/image\ 1.png); */
+    background-position: center;
     background-size: cover;
+    height: 200vh;
+   
     
 }
 .container{
@@ -39,24 +42,40 @@ nav{
 }
 .logo{
 
-    width: 100%;
-    position: absolute;
-    padding: 5px 5%; 
+    font-size: 30px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;       
     
+}
+.logo span{
+
+    color: #186F65;
+}
+nav ul{
+    
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li{
 
-  display: inline-block; 
-  list-style: none;
-  margin: 10px 5px; 
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 18px;
 }
 nav ul li a{
 
-   color: black; 
-   text-decoration: none;
-   font-size: 18px;
-   position: relative;
+    text-decoration: none;
+    color: #113946;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
 }
 nav ul li a::after{
 
@@ -67,7 +86,7 @@ nav ul li a::after{
    position: absolute;
    left: 0;
    bottom: -6px;
-   transition: 0.5s;
+   transition: 0.5s ease-in-out;
 }
 nav ul li a:hover::after{
 
@@ -77,23 +96,44 @@ nav ul li a:hover::after{
 .header-text{
 
   margin-top: 20%; 
-  font-size: 35px; 
+  font-size: 45px; 
+  
 }
 .header-text h1{
-
-  font-size: 20px; 
-  margin-top: 10px; 
+    
+    font-family: 'Times New Roman';
+    font-size: 41px;
+    padding-left: 20px;
+    margin-top: 28%;
+    letter-spacing: 1.5px;
+    line-height: 45px;
+}
+.header-text .par{
+    
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: Arial;
+    letter-spacing: 1px;
+    line-height: 30px;
 }
 .header-text h1 span{
 
-    color: #3085C3;
+    color: #186F65;
+    font-size: 32px;
+}
+.header-text .par span{
+    
+    color: #186F65;
+    font-size: 22px;
+
 }
 
 /*-----------ABOUT----------*/
 #about{
 
     padding: 80px 0;
-    color:  #113946;
+    color: #113946;
 }
 .row{
 
@@ -117,14 +157,14 @@ nav ul li a:hover::after{
 }
 .sub-title{
 
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
-    color: #F5F5DC;
+    color: #186F65;
 }
 .tab-titles{
 
     display: flex;
-    margin: 20px 0 40px;
+    margin: 30px 0 40px;
 }
 .tab-links{
 
@@ -139,11 +179,11 @@ nav ul li a:hover::after{
    content: '';
    width: 0;
    height: 3px;
-   background: #F5F5DC;
+   background: #186F65;
    position: absolute;
    left: 0;
    bottom: -8px;
-   transition: 0.5s;
+   transition: 0.5s ease-in-out;
 }
 .tab-links.active-link::after{
 
@@ -156,15 +196,17 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li span{
 
-  color: #F5F5DC;
-  font-size: 14px;
+  color: #186F65;
+  font-size: 18px;
 }
 .tab-contents{
     display: none;
+    
 }
 .tab-contents.active-tab{
 
-    display:block ;
+    display:block;
+    
 }
 
 /*------------------------PORTFOLIO-------------------*/
@@ -186,12 +228,12 @@ nav ul li a:hover::after{
     width: 100%;
     border-radius: 10px;
     display: block;
-    transition:transform 0.5s;
+    transition:transform 0.5s ease-in-out;
 }
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6), #F5F5DC);
+    background: linear-gradient(rgba(0,0,0,0.6), #EEEEEE);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -203,8 +245,8 @@ nav ul li a:hover::after{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
+    font-size: 18px;
+    transition: height 0.5s ease-in-out;
 }
 .layer h3{
     font-weight: 500;
@@ -212,11 +254,11 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #D0E7D2;
+    color: #186F65;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #F5F5DC;
+    background: #EEEEEE;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -232,15 +274,15 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #B0D9B1;
+    border: 1px solid #113946;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #B4B4B3;
+    color: #186F65;
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #F5F5DC;
+    background: #B0D9B1;
 }
 
 /*--------------------CONTACT---------------------*/
@@ -254,7 +296,7 @@ nav ul li a:hover::after{
    margin-top: 30px;
 }
 .contact-left p i{
-   color: #D0E7D2;
+   color: #113946;
    margin-right: 15px;
    font-size: 25px;
  }
@@ -265,17 +307,17 @@ nav ul li a:hover::after{
    text-decoration: none;
    font-size: 30px;
    margin-right: 15px;
-   color: #D0E7D2;
+   color: #EEEEEE;
    display: inline-block;
-   transition: transform 0.5s;
+   transition: transform 0.5s ease-in-out;
  }
  .social-icons a:hover{
-    color: #F5F5DC;
+    color: #186F65;
     transform: translateY(-5px);
  }
  .btn.btn2{
     display: inline-block;
-    background: #F5F5DC;
+    background: #EEEEEE;
  }
  .contact-right form{
     width: 100%; 
@@ -284,10 +326,10 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline:none;
-    background: #F5F5DC;
+    background: #D7E5CA;
     padding: 15px;
     margin: 15px 0;
-    color: #B4B4B3;
+    color: #186F65;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -297,16 +339,20 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
+form .btn2:hover{
+    background: #B0D9B1;
+   
+}
 .copyright{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #F5F5DC;
+    background: #D7E5CA;
     font-weight: 300;
     margin-top: 20px;
 }
 .copyright i{
-    color: #D0E7D2;
+    color: #113946;
 }
 
 /*------------------CSS FOR SMALL SCREENS-----------*/
@@ -329,7 +375,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
-        background: #D0E7D2;
+        background: #113946;
         position: fixed;
         top: 0;
         right: -200px;
@@ -337,7 +383,7 @@ nav .fa-solid{
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
-        transition: right 0.5s;
+        transition: right 0.5s ease-in-out;
     }
     nav ul li{
         display: block;
@@ -374,7 +420,7 @@ nav .fa-solid{
 }
 
 #msg{
-    color: #8EACCD;
+    color: #186F65;
     margin-top: -40px;
     display: block;
 }
