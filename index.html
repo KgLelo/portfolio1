@@ -17,7 +17,6 @@
 <!-- Scroll to Top Button -->
 <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
-
 <header>
   <nav>
     <h2 class="logo"><span><i class="fa-solid fa-code"></i> Kg</span>.Lelo</h2>
@@ -26,10 +25,14 @@
       <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
       <li><a href="#portfolio"><i class="fa-solid fa-certificate"></i> Achievements</a></li>
       <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-      <li><button class="dark-toggle" onclick="toggleDarkMode()"><i class="fa-solid fa-moon"></i></button></li>
-      <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+      <li>
+        <button class="dark-toggle" onclick="toggleDarkMode()">
+          <i id="darkIcon" class="fa-solid fa-moon"></i>
+        </button>
+      </li>
+      <i class="fa-solid fa-square-xmark close-icon" onclick="closemenu()"></i>
     </ul>
-    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    <i class="fa-solid fa-bars menu-icon" onclick="openmenu()"></i>
   </nav>
 </header>
 
@@ -53,7 +56,7 @@
       </div>
       <div class="about-col-2">
         <h1 class="sub-title"><i class="fa-solid fa-user-tie"></i> About Me</h1>
-        <p>"I am a graduate of Tshwane University of Technology, holding a National Diploma in Information Technology with a specialization in Software Development. I am proficient in a variety of programming languages and technologies, including HTML, CSS, C++, SQL, PHP, Python, JavaScript, PL/SQL, and SQL Server."</p>
+        <p>I am a graduate of Tshwane University of Technology with a National Diploma in IT (Software Development). Proficient in HTML, CSS, JS, C++, SQL, PHP, Python, and more.</p>
 
         <div class="tab-titles">
           <p class="tab-links active-link" onclick="opentab('skills')"><i class="fa-solid fa-laptop-code"></i> Skills</p>
@@ -62,19 +65,19 @@
 
         <div class="tab-contents active-tab" id="skills">
           <ul>
-            <li><span>Front-End Developer</span><br><i>Web development using HTML, CSS and JavaScript</i></li>
-            <li><span>Database Administration</span><br><i>SQL Server, MySQL, and Oracle</i></li>
-            <li><span>Software/Hardware Monitor</span><br><i>Installation & Monitoring</i></li>
-            <li><span>IT Operational Services</span><br><i>Support & Maintenance</i></li>
-            <li><span>Microsoft Office Tools</span><br><i>Word, Excel, PowerPoint, Access</i></li>
-            <li><span>Networking Engeneering</span><br><i>Optic Fibre, OSI Layers, google earth, DWDM </i></li>
+            <li><span>Front-End Developer</span><br><i>HTML, CSS, JavaScript</i></li>
+            <li><span>Database Admin</span><br><i>SQL Server, MySQL, Oracle</i></li>
+            <li><span>Software/Hardware Monitor</span><br><i>Setup, Maintenance</i></li>
+            <li><span>IT Services</span><br><i>Support, Operations</i></li>
+            <li><span>Office Tools</span><br><i>Word, Excel, PowerPoint</i></li>
+            <li><span>Networking</span><br><i>Fibre, OSI Model, DWDM</i></li>
           </ul>
         </div>
 
         <div class="tab-contents" id="education">
           <ul>
-            <li><span><b>Mokgubi Secondary School</b> - 2017</span><br><b>Matric</b> - National Senior Certificate</li>
-            <li><span><b>Tshwane University of Technology</b> - 2022</span><br><b>National Diploma</b> - IT (Software Development)</li>
+            <li><span><b>Mokgubi Secondary School</b> - 2017</span><br>Matric Certificate</li>
+            <li><span><b>TUT</b> - 2022</span><br>National Diploma in IT (Software Dev)</li>
           </ul>
         </div>
       </div>
@@ -87,26 +90,15 @@
   <div class="container">
     <h1 class="sub-title"><i class="fa-solid fa-award"></i> Certificates & Achievements</h1>
     <div class="work-list">
-      <!-- Example certificate -->
       <div class="work">
-        <img src="images/img2.png" alt="AZ900">
+        <img src="images/img1.png" alt="AZ Certs">
         <div class="layer">
-          <h3>AZ900 Certificate</h3>
-          <p>Achieved and Awarded</p>
+          <h3>AZ900 & AZ104</h3>
+          <p>Microsoft Azure Certificate</p>
           <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
       </div>
-
-      <!-- Repeat for other certs... -->
-        <div class="work">
-        <img src="images/img1.png" alt="Microsoft Azure Certs">
-        <div class="layer">
-          <h3>AZ900 and AZ104 Course Completion</h3>
-          <p>Successfully Completed the Course.</p>
-          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </div>
-      <!-- Add your other .work divs here as in your original code -->
+      <!-- Add more .work blocks -->
     </div>
     <a href="#about" class="btn">Find More About Me</a>
   </div>
@@ -121,13 +113,11 @@
         <p><i class="fa-solid fa-envelope"></i> <a href="mailto:digimo45@gmail.com">digimo45@gmail.com</a></p>
         <p><i class="fa-solid fa-phone"></i> <a href="tel:0817183998">081 718 3998</a></p>
         <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/27817183998" target="_blank">WhatsApp Me</a></p>
-
         <div class="social-icons">
-          <a href="https://www.linkedin.com/in/kgotlelelo-digomo"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://linkedin.com/in/kgotlelelo-digomo"><i class="fa-brands fa-linkedin"></i></a>
           <a href="https://instagram.com/kg.lelow_digomo"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
-
       <div class="contact-right">
         <form name="submit-to-google-sheet">
           <input type="text" name="Name" placeholder="Your Name" required />
@@ -144,75 +134,78 @@
   </div>
 </section>
 
-<!-- JAVASCRIPT -->
+<!-- JavaScript -->
 <script>
-  // Tab Switching
   function opentab(tabname) {
     let tablinks = document.getElementsByClassName("tab-links");
     let tabcontents = document.getElementsByClassName("tab-contents");
-
     for (let tablink of tablinks) tablink.classList.remove("active-link");
     for (let tabcontent of tabcontents) tabcontent.classList.remove("active-tab");
-
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
   }
 
-  // Toggle Side Menu
-  const sidemenu = document.getElementById("sidemenu");
-  function openmenu() {
-    sidemenu.style.right = "0";
-  }
-  function closemenu() {
-    sidemenu.style.right = "-220px";
-  }
-
-  // Google Form Submission
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbw-aaUgcrYK5qQ80NZwdUymzvTN71irpjSx1lqx-R8BG0Yi9G3i98DlYgASDuJl5XeNyQ/exec';
-  const form = document.forms['submit-to-google-sheet'];
-  const msg = document.getElementById("msg");
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message Received!";
-        setTimeout(() => msg.innerHTML = "", 4000);
-        form.reset();
-      })
-      .catch(error => console.error('Error!', error.message));
-  });
-
-  // Hide/Show Home
   function toggleHome() {
     const home = document.getElementById("home");
     home.classList.toggle("hide-home");
   }
 
-  // Dark Mode
   function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
+    const body = document.body;
+    const icon = document.getElementById("darkIcon");
+    const isDark = body.classList.toggle("dark-mode");
+    icon.classList.toggle("fa-sun", isDark);
+    icon.classList.toggle("fa-moon", !isDark);
+    localStorage.setItem("theme", isDark ? "dark" : "light");
   }
 
-  // Page Loader - Hide after load
-window.addEventListener("load", () => {
-  document.getElementById("loader").style.display = "none";
-});
+  window.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme");
+    const icon = document.getElementById("darkIcon");
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark-mode");
+      icon.classList.remove("fa-moon");
+      icon.classList.add("fa-sun");
+    }
+  });
 
-// Scroll to Top Button
-const scrollBtn = document.getElementById("scrollTopBtn");
-window.onscroll = function () {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    scrollBtn.style.display = "block";
-  } else {
-    scrollBtn.style.display = "none";
+  // Slide Menu Animation
+  const sidemenu = document.getElementById("sidemenu");
+  function openmenu() {
+    sidemenu.classList.add("menu-open");
+    sidemenu.classList.remove("menu-close");
   }
-};
+  function closemenu() {
+    sidemenu.classList.remove("menu-open");
+    sidemenu.classList.add("menu-close");
+  }
 
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+  // Form submit
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw-aaUgcrYK5qQ80NZwdUymzvTN71irpjSx1lqx-R8BG0Yi9G3i98DlYgASDuJl5XeNyQ/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById("msg");
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        msg.innerHTML = "Message Received!";
+        setTimeout(() => msg.innerHTML = "", 4000);
+        form.reset();
+      }).catch(error => console.error('Error!', error.message));
+  });
 
+  window.addEventListener("load", () => {
+    document.getElementById("loader").style.display = "none";
+  });
+
+  // Scroll to Top
+  const scrollBtn = document.getElementById("scrollTopBtn");
+  window.onscroll = function () {
+    scrollBtn.style.display = window.scrollY > 200 ? "block" : "none";
+  };
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 </script>
 
 </body>
