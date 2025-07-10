@@ -1,261 +1,146 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
-    
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-    <title>KG PROFILE</title>
-    <link rel = "stylesheet" href = "styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kgotlelelo Digomo | Profile</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/d62ff4d467.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="header">
-
-    <div class="container">
-        <nav>
-            <h2 class = "logo"><span>Kg</span>.Lelo</h2>
-            <!--<img src = "images/MyLog.png" class="Logo"> -->
-            <ul id="sidemenu">
-                <li><a href = "#header">Home</a></li>
-                <li><a href = "#about">About</a></li>
-                <li><a href = "#portfolio">Achievements</a></li>
-                <li><a href = "#contact">Contact</a></li>
-                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-                <h1>Information Technology|<br><span>Software Development</span></h1>
-                <p class="par">Hello,<br> My name is <span>Kgotlelelo Digomo</span>,<br>a skilled software developer with a focus on Front-End Development,<br>who's deeply enthusiastic about the world of technology.</p>
-
-        </div>
-    </div>
-</div>
-
-<!------------ABOUT-------->
-<div id="about">
-
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-               <img src = "images/kg.jpg">
+    <header id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo"><span>Kg</span>.Lelo</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Information Technology | <br><span>Software Development</span></h1>
+                <p class="par">Hello, I'm <span>Kgotlelelo Digomo</span>, a skilled software developer passionate about front-end development and technology innovation.</p>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-               <p>As a graduate of Tshwane University of Technology with a National Diploma in Information Technology, specialized in Software Development.
-                   I possess proficiency in various programming languages, including HTML, CSS, C++, SQL, PHP, Python, JavaScript, PL/SQL, and Sql Server. </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                   <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/kg.jpg" alt="Kgotlelelo Digomo">
                 </div>
-                <div class="tab-contents active-tab" id ="skills">
-                    <ul>
-                        <li><span>Front-End Developer</span><br><i>Web development using HTML, CSS and JavaScript</i></li>
-                        <li><span>Database Administrative</span><br><i>Perform SQL Server, MySql and Oracle</i></li>
-                        <li><span>Software/Hardware Monitor</span><br><i>Installing and Monitoring Software/Hardware</i></li>
-                        <li><span>Managing Additional Services:</span><br><i>IT Operational Services</i></li>
-                        <li><span>Proficiency in Microsoft Office applications:</span><br><i> Ms Word, Ms Excel, Ms Access, and Ms PowerPoint</i></li>
-                    </ul>
-                </div>
-               <!-- <div class="tab-contents" id="experience">
-    <ul>
-        <li>
-            <span><b>Jeremia Mdaka Primary School - </b>April 2023 - August 2023</span><br>
-            <i>Administrative Clerk Assistant</i>
-            <ol>
-                <li>1. Assisted with various administrative tasks.</li>
-                <li>2. Proofread and edited professional documents to rectify errors.</li>
-                <li>3. Provided technical support and troubleshooted issues to enhance office productivity.</li>
-                <li>4. Organized meetings and appointments, and updated records to support management.</li>
-                <li>5. Entered data and processed system changes to generate accurate reports.</li>
-            </ol>
-        </li>
-        <br>
-        <li>
-            <span><b>Ricoh SA - </b>August 2023 - March 2024</span><br>
-            <i>Junior Learnership Post Sales Consultant</i>
-            <ol>
-                <li>1. Developed UI/UX - Designed and published a web form for user interface using PlanetPress.</li>
-                <li>2. Managed and configured software installation and setup.</li>
-                <li>3. Implemented and configured workflow processes.</li>
-                <li>4. Monitored documents using DocuWare Management System.</li> 
-                <li>5. Implemented business processes.</li>
-            </ol>
-        </li>
-    </ul>
-</div>
--->
-                <div class="tab-contents" id = "education">
-                    <ul>
-                        <li><span><b>Mokgubi Secondary School</b> - 2017</span><br><b>Matric</b> - <i>National Senior Certifiacte</i></li>
-                        <li><span><b>Tshwane University Of Technology</b> - 2022</span><br><b>Qualified</b> - <i>National Diploma in IT(Software Development)</i></li>
-                    </ul>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Graduate of Tshwane University of Technology with a National Diploma in IT (Software Development). Skilled in HTML, CSS, JavaScript, PHP, Python, C++, SQL Server, and more.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Developer</span> - HTML, CSS, JavaScript</li>
+                            <li><span>Database Admin</span> - SQL Server, MySQL, Oracle</li>
+                            <li><span>Software/Hardware Support</span> - Installation and Monitoring</li>
+                            <li><span>IT Operations</span> - Admin & Network Services</li>
+                            <li><span>Office Tools</span> - MS Word, Excel, PowerPoint</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><b>Mokgubi Secondary School (2017)</b> - National Senior Certificate</li>
+                            <li><b>Tshwane University Of Technology (2022)</b> - Diploma in IT (Software Development)</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<!-----------------PORTFOLIO------------------------------->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">Certificates And Achievements</h1> 
-        <div class="work-list">
-           <div class="work">
-            <img src = "images/Html certificate .jpg">
-            <div class="layer">
-                <h3>HTML CERTIFICATE</h3>
-                <p>I achieved and awarded HTML certificate by successfully completing the course in WildLearner.</p>
-                <a href = "https://wildlearner.com/"><i class="fa-solid fa-award"></i></a>
-                
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Certificates & Achievements</h1>
+            <div class="work-list">
+                <!-- Sample Certificate Block -->
+                <div class="work">
+                    <img src="images/Html certificate .jpg" alt="HTML Certificate">
+                    <div class="layer">
+                        <h3>HTML Certificate</h3>
+                        <p>Completed via WildLearner</p>
+                        <a href="https://wildlearner.com/" target="_blank"><i class="fa-solid fa-award"></i></a>
+                    </div>
+                </div>
+                <!-- Additional certificate blocks (PHP, Python, CSS, etc.) go here -->
             </div>
-           </div>
-           <div class="work">
-            <img src = "images/KG.PHP.jpg">
-            <div class="layer">
-                <h3>PHP CERTIFITATE</h3>
-                <p>I achieved and awarded PHP certificate by successfully completing the course in
-                    demonstrating theoretical and practical understanding of mentioned programming language enrolled in Sololearn.</p>
-                <a href = "https://www.sololearn.com/"><i class="fa-solid fa-award"></i></i></a>
-            </div>
-           </div>
-           <div class="work">
-            <img src = "images/Python Cert.jpg">
-            <div class="layer">
-                <h3>PYTHON CERTIFICATE</h3>
-                <p>I achieved and awarded Phython certificate by successfully completing the course in WildLearner</p>
-                <a href = "https://wildlearner.com/"><i class="fa-solid fa-award"></i></i></a>
-            </div>
-           </div>
-           <div class="work">
-            <img src = "images/Kgotlelelo Digomo_CSSCert.jpg">
-            <div class="layer">
-                <h3>CSS CERTIFICATE</h3>
-                <p>I achieved and awarded CSS front end development certificate by successfully
-                    completing online courses enrolled in Great Learning Academy.</p>
-                <a href = "https://www.mygreatlearning.com/"><i class="fa-solid fa-award"></i></i></a>
-            </div>
-           </div>
-           <div class="work">
-            <img src = "images/Kgotlelelo Digomo_HtmlCert.jpg">
-            <div class="layer">
-                <h3>HTML CERTIFICATE</h3>
-                <p>I achieved and awarded HTML front end development certificate by successfully
-                    completing online courses enrolled in Great Learning Academy.</p>
-                <a href = "https://www.mygreatlearning.com/"><i class="fa-solid fa-award"></i></i></a>
-            </div>
-           </div>
-           <div class="work">
-            <img src = "images/Python-Programming Cert.png">
-            <div class="layer">
-                <h3>Docuware Sales Advisor CERTIFICATE</h3>
-                <p>I obtained this certificate online by successfully completing the course in introduction to python programming via DataQuest.</p>
-                <a href = "https://www.dataquest.io/"><i class="fa-solid fa-award"></i></i></a>
-            </div>
-           </div> 
-           <div class="work">
-            <img src = "images/JavaScript Cert.png">
-            <div class="layer">
-                <h3>JAVASCRIPT CERTIFICATE</h3>
-                <p>I obtained this certificate online by successfully completing the course in JavaScript through Simplelearn</p>
-                <a href = "https://www.simplilearn.com/"><i class="fa-solid fa-award"></i></i></a>
-            </div>
-           </div>
+            <a href="#about" class="btn">More About Me</a>
         </div>
-        <a href="#about" class = "btn">Find More About Me</a> 
-       <!-- <a href="images/KDIGOMO_CV.pdf" download class="btn btn2">Download CV</a> -->
-    </div>
-</div>
+    </section>
 
-<!------------------CONTACT------------------------>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:digimo45@gmail.com">digimo45@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i> <a href="tel:0817183998">081 718 3998</a></p>
+                    <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/27817183998" target="_blank">WhatsApp Message</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/kgotlelelo-digomo" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://instagram.com/kg.lelow_digomo" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Kgotlelelo Digomo. All Rights Reserved <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </section>
 
- <div id="contact">
-    <div class="container">
-<div class="row">
-    <div class="contact-left">
-    <h1 class = "sub-title">Contact Me</h1>
-    <p><i class="fa-solid fa-envelope"></i>Email Me: <a href="mailto:digimo45@gmail.com">digimo45@gmail.com</a></p>
-  
-    <p><i class="fa-solid fa-phone"></i>Call Me:  <a href="tel:0817183998">0817183998</a></p>
-
-    <!-- WhatsApp link -->
-     <p><i class="fa-brands fa-square-whatsapp"></i>WhatsApp: <a href="https://wa.me/0817183998" target="_blank">Send Message</a></p>
-
-
-     <div class="social-icons">
-       <p><a href = "https://www.linkedin.com/in/kgotlelelo-digomo"><i class="fa-brands fa-linkedin"></i></a>Linkedln</p>
-       <p><a href = "https://instagram.com/kg.lelow_digomo?utm_source=qr&igshid=OGU0MmVlOWVjOQ=="><i class="fa-brands fa-instagram"></i></a>Instagram</p>
-     </div>
-    </div>
-   
-    <div class="contact-right">
-        <form name="submit-to-google-sheet">
-            <input type = "text" name = "Name" placeholder="Your Name" required>
-            <input type="Email" name ="Email" placeholder="Your Email" required>
-            <textarea name="Message" row="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit Here</button>
-        </form>
-        <span id="msg"></span>
-    </div>
-    
-</div>
-    </div>
-    <div class="copyright">
-        <p>Copyright <i class="fa-solid fa-copyright"></i>2024 @Kgotlelelo. All Rights Reserved<i class="fa-solid fa-heart"></i></p>
-    </div>
- </div>
-
-    
-<!----------------FOR JAVASCRIPT-------------------->
-
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+    <script>
+        function opentab(tabname) {
+            const tablinks = document.querySelectorAll(".tab-links");
+            const tabcontents = document.querySelectorAll(".tab-contents");
+            tablinks.forEach(t => t.classList.remove("active-link"));
+            tabcontents.forEach(t => t.classList.remove("active-tab"));
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link")
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-    
-<script>
-    var sidemeu = document.getElementById("sidemenu");
 
-    function openmenu(){
-       sidemeu.style.right = "0";   
-    }
+        const sidemenu = document.getElementById("sidemenu");
+        function openmenu() { sidemenu.style.right = "0"; }
+        function closemenu() { sidemenu.style.right = "-200px"; }
 
-    function closemenu(){
-       sidemeu.style.right = "-200px";   
-    }
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw-aaUgcrYK5qQ80NZwdUymzvTN71irpjSx1lqx-R8BG0Yi9G3i98DlYgASDuJl5XeNyQ/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
 
-</script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbw-aaUgcrYK5qQ80NZwdUymzvTN71irpjSx1lqx-R8BG0Yi9G3i98DlYgASDuJl5XeNyQ/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {msg.innerHTML = "Massege Received!"
-         setTimeout(function(){
-            msg.innerHTML = ""
-        },5000)
-        form.reset()
-    })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message received!";
+                    setTimeout(() => msg.innerHTML = "", 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
 </body>
 </html>
