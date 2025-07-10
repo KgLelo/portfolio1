@@ -26,9 +26,14 @@
       <li><a href="#portfolio"><i class="fa-solid fa-certificate"></i> Achievements</a></li>
       <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
       <li>
-        <button class="dark-toggle" onclick="toggleDarkMode()">
+        <!--<button class="dark-toggle" onclick="toggleDarkMode()">
           <i id="darkIcon" class="fa-solid fa-moon"></i>
+        </button>-->
+        <li>
+        <button class="toggle-btn" id="darkModeToggle" onclick="toggleDarkMode()">
+          🌙
         </button>
+
       </li>
       <i class="fa-solid fa-square-xmark close-icon" onclick="closemenu()"></i>
     </ul>
@@ -43,7 +48,8 @@
     <p class="par">Hello, <br> My name is <span>Kgotlelelo Digomo</span>,<br>
       a skilled software developer,<br>
       and deeply enthusiastic about the world of technology.</p>
-    <button class="btn" onclick="toggleHome()">Hide Home</button>
+    <!--<button class="btn" onclick="toggleHome()">Hide/Show Home</button>-->
+    <button class="btn" id="toggleHomeBtn" onclick="toggleHome()">Hide Home</button>
   </div>
 </section>
 
@@ -145,6 +151,31 @@
     document.getElementById(tabname).classList.add("active-tab");
   }
 
+  function toggleDarkMode() {
+  const body = document.body;
+  const toggleBtn = document.getElementById("darkModeToggle");
+
+  body.classList.toggle("dark-mode");
+
+  if (body.classList.contains("dark-mode")) {
+    toggleBtn.textContent = "🌞";
+  } else {
+    toggleBtn.textContent = "🌙";
+  }
+}
+
+function toggleHome() {
+  const homeSection = document.getElementById("home");
+  const toggleBtn = document.getElementById("toggleHomeBtn");
+
+  homeSection.classList.toggle("hide-home");
+
+  if (homeSection.classList.contains("hide-home")) {
+    toggleBtn.textContent = "Show Home";
+  } else {
+    toggleBtn.textContent = "Hide Home";
+  }
+}
   function toggleHome() {
     const home = document.getElementById("home");
     home.classList.toggle("hide-home");
