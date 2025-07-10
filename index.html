@@ -1,146 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kgotlelelo Digomo | Profile</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/d62ff4d467.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KG Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/d62ff4d467.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header id="header">
-        <div class="container">
-            <nav>
-                <h2 class="logo"><span>Kg</span>.Lelo</h2>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Achievements</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <h1>Information Technology | <br><span>Software Development</span></h1>
-                <p class="par">Hello, I'm <span>Kgotlelelo Digomo</span>, a skilled software developer passionate about front-end development and technology innovation.</p>
-            </div>
+
+<header>
+  <nav>
+    <h2 class="logo"><span><i class="fa-solid fa-code"></i> Kg</span>.Lelo</h2>
+    <ul id="sidemenu">
+      <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="#portfolio"><i class="fa-solid fa-certificate"></i> Achievements</a></li>
+      <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      <li><button class="dark-toggle" onclick="toggleDarkMode()"><i class="fa-solid fa-moon"></i></button></li>
+      <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+    </ul>
+    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home">
+  <div class="container header-text">
+    <h1>Information Technology | <br><span>Software Developer</span></h1>
+    <p class="par">Hello, <br> My name is <span>Kgotlelelo Digomo</span>,<br>
+      a skilled software developer,<br>
+      and deeply enthusiastic about the world of technology.</p>
+    <button class="btn" onclick="toggleHome()">Hide Home</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/kg.jpg" alt="Kgotlelelo Digomo">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title"><i class="fa-solid fa-user-tie"></i> About Me</h1>
+        <p>"I am a graduate of Tshwane University of Technology, holding a National Diploma in Information Technology with a specialization in Software Development. I am proficient in a variety of programming languages and technologies, including HTML, CSS, C++, SQL, PHP, Python, JavaScript, PL/SQL, and SQL Server."</p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')"><i class="fa-solid fa-laptop-code"></i> Skills</p>
+          <p class="tab-links" onclick="opentab('education')"><i class="fa-solid fa-graduation-cap"></i> Education</p>
         </div>
-    </header>
 
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/kg.jpg" alt="Kgotlelelo Digomo">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Graduate of Tshwane University of Technology with a National Diploma in IT (Software Development). Skilled in HTML, CSS, JavaScript, PHP, Python, C++, SQL Server, and more.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Front-End Developer</span> - HTML, CSS, JavaScript</li>
-                            <li><span>Database Admin</span> - SQL Server, MySQL, Oracle</li>
-                            <li><span>Software/Hardware Support</span> - Installation and Monitoring</li>
-                            <li><span>IT Operations</span> - Admin & Network Services</li>
-                            <li><span>Office Tools</span> - MS Word, Excel, PowerPoint</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><b>Mokgubi Secondary School (2017)</b> - National Senior Certificate</li>
-                            <li><b>Tshwane University Of Technology (2022)</b> - Diploma in IT (Software Development)</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Front-End Developer</span><br><i>Web development using HTML, CSS and JavaScript</i></li>
+            <li><span>Database Administration</span><br><i>SQL Server, MySQL, and Oracle</i></li>
+            <li><span>Software/Hardware Monitor</span><br><i>Installation & Monitoring</i></li>
+            <li><span>IT Operational Services</span><br><i>Support & Maintenance</i></li>
+            <li><span>Microsoft Office Tools</span><br><i>Word, Excel, PowerPoint, Access</i></li>
+            <li><span>Networking Engeneering</span><br><i>Optic Fibre, OSI Layers, google earth, DWDM </i></li>
+          </ul>
         </div>
-    </section>
 
-    <section id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">Certificates & Achievements</h1>
-            <div class="work-list">
-                <!-- Sample Certificate Block -->
-                <div class="work">
-                    <img src="images/Html certificate .jpg" alt="HTML Certificate">
-                    <div class="layer">
-                        <h3>HTML Certificate</h3>
-                        <p>Completed via WildLearner</p>
-                        <a href="https://wildlearner.com/" target="_blank"><i class="fa-solid fa-award"></i></a>
-                    </div>
-                </div>
-                <!-- Additional certificate blocks (PHP, Python, CSS, etc.) go here -->
-            </div>
-            <a href="#about" class="btn">More About Me</a>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span><b>Mokgubi Secondary School</b> - 2017</span><br><b>Matric</b> - National Senior Certificate</li>
+            <li><span><b>Tshwane University of Technology</b> - 2022</span><br><b>National Diploma</b> - IT (Software Development)</li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:digimo45@gmail.com">digimo45@gmail.com</a></p>
-                    <p><i class="fa-solid fa-phone"></i> <a href="tel:0817183998">081 718 3998</a></p>
-                    <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/27817183998" target="_blank">WhatsApp Message</a></p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/kgotlelelo-digomo" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://instagram.com/kg.lelow_digomo" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="container">
+    <h1 class="sub-title"><i class="fa-solid fa-award"></i> Certificates & Achievements</h1>
+    <div class="work-list">
+      <!-- Example certificate -->
+      <div class="work">
+        <img src="images/Html certificate .jpg" alt="HTML Certificate">
+        <div class="layer">
+          <h3>HTML Certificate</h3>
+          <p>Earned through WildLearner by completing foundational HTML course.</p>
+          <a href="https://wildlearner.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
-        <div class="copyright">
-            <p>&copy; 2024 Kgotlelelo Digomo. All Rights Reserved <i class="fa-solid fa-heart"></i></p>
+      </div>
+
+      <!-- Repeat for other certs... -->
+        <div class="work">
+        <img src="images/Html certificate .jpg" alt="HTML Certificate">
+        <div class="layer">
+          <h3>HTML Certificate</h3>
+          <p>Earned through WildLearner by completing foundational HTML course.</p>
+          <a href="https://wildlearner.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
-    </section>
+      </div>
+      <!-- Add your other .work divs here as in your original code -->
+    </div>
+    <a href="#about" class="btn">Find More About Me</a>
+  </div>
+</section>
 
-    <script>
-        function opentab(tabname) {
-            const tablinks = document.querySelectorAll(".tab-links");
-            const tabcontents = document.querySelectorAll(".tab-contents");
-            tablinks.forEach(t => t.classList.remove("active-link"));
-            tabcontents.forEach(t => t.classList.remove("active-tab"));
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title"><i class="fa-solid fa-paper-plane"></i> Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:digimo45@gmail.com">digimo45@gmail.com</a></p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:0817183998">081 718 3998</a></p>
+        <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/27817183998" target="_blank">WhatsApp Me</a></p>
 
-        const sidemenu = document.getElementById("sidemenu");
-        function openmenu() { sidemenu.style.right = "0"; }
-        function closemenu() { sidemenu.style.right = "-200px"; }
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/kgotlelelo-digomo"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/kg.lelow_digomo"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
 
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbw-aaUgcrYK5qQ80NZwdUymzvTN71irpjSx1lqx-R8BG0Yi9G3i98DlYgASDuJl5XeNyQ/exec';
-        const form = document.forms['submit-to-google-sheet'];
-        const msg = document.getElementById("msg");
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required />
+          <input type="email" name="Email" placeholder="Your Email" required />
+          <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn2">Submit Here</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2024 Kgotlelelo. All Rights Reserved. <i class="fa-solid fa-heart"></i></p>
+  </div>
+</section>
 
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message received!";
-                    setTimeout(() => msg.innerHTML = "", 5000);
-                    form.reset();
-                })
-                .catch(error => console.error('Error!', error.message));
-        });
-    </script>
+<!-- JAVASCRIPT -->
+<script>
+  // Tab Switching
+  function opentab(tabname) {
+    let tablinks = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
+
+    for (let tablink of tablinks) tablink.classList.remove("active-link");
+    for (let tabcontent of tabcontents) tabcontent.classList.remove("active-tab");
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+  // Toggle Side Menu
+  const sidemenu = document.getElementById("sidemenu");
+  function openmenu() {
+    sidemenu.style.right = "0";
+  }
+  function closemenu() {
+    sidemenu.style.right = "-220px";
+  }
+
+  // Google Form Submission
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw-aaUgcrYK5qQ80NZwdUymzvTN71irpjSx1lqx-R8BG0Yi9G3i98DlYgASDuJl5XeNyQ/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Received!";
+        setTimeout(() => msg.innerHTML = "", 4000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message));
+  });
+
+  // Hide/Show Home
+  function toggleHome() {
+    const home = document.getElementById("home");
+    home.classList.toggle("hide-home");
+  }
+
+  // Dark Mode
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
+
 </body>
 </html>
