@@ -263,6 +263,30 @@ nav ul li a:hover {
   color: var(--dark-color);
 }
 
+/* 🌞🌙 Dark Mode Emoji Button */
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Hide Home Section */
+.hide-home {
+  display: none !important;
+}
+
+/* Light Mode Icon on Dark Background */
+body.dark-mode .toggle-btn {
+  color: #f9f9f9;
+}
+
 form input,
 form textarea {
   width: 100%;
