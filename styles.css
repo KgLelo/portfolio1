@@ -40,6 +40,8 @@ nav {
   background: var(--primary-color);
   padding: 20px;
   color: #fff;
+  position: relative;
+  z-index: 999;
 }
 
 .logo {
@@ -55,6 +57,7 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  transition: right var(--transition-speed) ease;
 }
 
 nav ul li a {
@@ -67,10 +70,38 @@ nav ul li a:hover {
   color: var(--highlight);
 }
 
-nav i.fa-bars,
-nav i.fa-xmark {
+.menu-icon,
+.close-icon {
   display: none;
   font-size: 24px;
+  cursor: pointer;
+}
+
+/* Mobile Menu Slide Animation */
+#sidemenu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 200px;
+  height: 100%;
+  background: var(--primary-color);
+  padding-top: 70px;
+  flex-direction: column;
+  transition: right var(--transition-speed) ease;
+  display: flex;
+}
+
+#sidemenu.menu-open {
+  right: 0;
+}
+
+#sidemenu.menu-close {
+  right: -250px;
+}
+
+#sidemenu li {
+  margin: 15px 0;
+  text-align: center;
 }
 
 /* Header */
@@ -198,6 +229,7 @@ nav i.fa-xmark {
   margin-top: 20px;
   text-decoration: none;
   transition: var(--transition-speed);
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -258,60 +290,31 @@ form .btn {
   margin-top: 30px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    position: fixed;
-    top: 70px;
-    right: -100%;
-    background: var(--primary-color);
-    width: 200px;
-    height: 100vh;
-    padding-top: 40px;
-    transition: right 0.3s ease;
-  }
-
-  nav ul li {
-    margin-bottom: 20px;
-  }
-
-  nav i.fa-bars {
-    display: block;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-
-  /* === HIDE HOME SECTION === */
+/* === Hide Home Section === */
 .hide-home {
+  display: none !important;
+}
+
+/* === Scroll to Top === */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 100;
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50%;
   display: none;
+  cursor: pointer;
 }
 
-/* === DARK MODE === */
-body.dark-mode {
-  background-color: #121212;
-  color: #f0f0f0;
+#scrollTopBtn:hover {
+  background-color: #0056b3;
 }
 
-body.dark-mode nav,
-body.dark-mode .container {
-  background-color: #1f1f1f;
-}
-
-body.dark-mode a,
-body.dark-mode .sub-title,
-body.dark-mode .btn {
-  color: #f9f9f9;
-}
-
-body.dark-mode .btn {
-  background: #333;
-  border: 1px solid #f9f9f9;
-}
-
-/* === LOADING SPINNER === */
+/* === Loader Spinner === */
 #loader {
   position: fixed;
   width: 100%;
@@ -338,23 +341,62 @@ body.dark-mode .btn {
   }
 }
 
-/* === SCROLL TO TOP === */
-#scrollTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 100;
-  background: #007BFF;
-  color: white;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 50%;
-  display: none;
-  cursor: pointer;
+/* === Dark Mode === */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
 }
 
-#scrollTopBtn:hover {
-  background-color: #0056b3;
+body.dark-mode nav {
+  background-color: #1f1f1f;
 }
 
+body.dark-mode .container {
+  background-color: transparent;
+}
+
+body.dark-mode a,
+body.dark-mode .sub-title,
+body.dark-mode .btn {
+  color: #f9f9f9;
+}
+
+body.dark-mode .btn {
+  background: #333;
+  border: 1px solid #f9f9f9;
+}
+
+body.dark-mode .layer {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .social-icons a {
+  color: #f0f0f0;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    right: -250px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 40px;
+    transition: right 0.3s ease;
+  }
+
+  nav ul li {
+    margin-bottom: 20px;
+  }
+
+  .menu-icon,
+  .close-icon {
+    display: block;
+  }
+
+  .row {
+    flex-direction: column;
+  }
 }
