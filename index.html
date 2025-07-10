@@ -9,6 +9,15 @@
 </head>
 <body>
 
+<!-- Loading Animation -->
+<div id="loader">
+  <div class="loader-spinner"></div>
+</div>
+
+<!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
 <header>
   <nav>
     <h2 class="logo"><span><i class="fa-solid fa-code"></i> Kg</span>.Lelo</h2>
@@ -184,6 +193,26 @@
   function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
   }
+
+  // Page Loader - Hide after load
+window.addEventListener("load", () => {
+  document.getElementById("loader").style.display = "none";
+});
+
+// Scroll to Top Button
+const scrollBtn = document.getElementById("scrollTopBtn");
+window.onscroll = function () {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+};
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 </script>
 
 </body>
